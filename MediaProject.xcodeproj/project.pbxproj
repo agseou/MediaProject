@@ -24,6 +24,11 @@
 		A01D3D382B58A25700C1AC43 /* TrendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01D3D362B58A25700C1AC43 /* TrendTableViewCell.xib */; };
 		A01D3D3B2B58A97E00C1AC43 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3D3A2B58A97E00C1AC43 /* Protocol.swift */; };
 		A01D3D3D2B58ACD600C1AC43 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3D3C2B58ACD600C1AC43 /* APIKey.swift */; };
+		A03B427C2B61F4EC002E14CF /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B427B2B61F4EC002E14CF /* CreditViewController.swift */; };
+		A03B42802B61F580002E14CF /* CastInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B427E2B61F580002E14CF /* CastInfoTableViewCell.swift */; };
+		A03B42812B61F580002E14CF /* CastInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */; };
+		A03B42832B62151E002E14CF /* CreditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B42822B62151E002E14CF /* CreditAPIManager.swift */; };
+		A03B42852B6218D6002E14CF /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B42842B6218D6002E14CF /* Credit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		A01D3D362B58A25700C1AC43 /* TrendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendTableViewCell.xib; sourceTree = "<group>"; };
 		A01D3D3A2B58A97E00C1AC43 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		A01D3D3C2B58ACD600C1AC43 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		A03B427B2B61F4EC002E14CF /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		A03B427E2B61F580002E14CF /* CastInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastInfoTableViewCell.xib; sourceTree = "<group>"; };
+		A03B42822B62151E002E14CF /* CreditAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAPIManager.swift; sourceTree = "<group>"; };
+		A03B42842B6218D6002E14CF /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A01D3D2E2B58A17300C1AC43 /* TrendMoive.swift */,
+				A03B42842B6218D6002E14CF /* Credit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,11 +116,12 @@
 		A01D3D302B58A1D100C1AC43 /* Trend */ = {
 			isa = PBXGroup;
 			children = (
+				A03B427D2B61F563002E14CF /* Cell */,
 				A01D3D262B589E9F00C1AC43 /* TrendAPIManager.swift */,
 				A01D3D312B58A1EC00C1AC43 /* TrendViewController.swift */,
-				A01D3D352B58A25700C1AC43 /* TrendTableViewCell.swift */,
-				A01D3D362B58A25700C1AC43 /* TrendTableViewCell.xib */,
 				A01D3D332B58A20400C1AC43 /* Trend.storyboard */,
+				A03B427B2B61F4EC002E14CF /* CreditViewController.swift */,
+				A03B42822B62151E002E14CF /* CreditAPIManager.swift */,
 			);
 			path = Trend;
 			sourceTree = "<group>";
@@ -120,6 +132,17 @@
 				A01D3D3A2B58A97E00C1AC43 /* Protocol.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A03B427D2B61F563002E14CF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A01D3D352B58A25700C1AC43 /* TrendTableViewCell.swift */,
+				A01D3D362B58A25700C1AC43 /* TrendTableViewCell.xib */,
+				A03B427E2B61F580002E14CF /* CastInfoTableViewCell.swift */,
+				A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +216,7 @@
 				A01D3D1A2B587E7000C1AC43 /* LaunchScreen.storyboard in Resources */,
 				A01D3D382B58A25700C1AC43 /* TrendTableViewCell.xib in Resources */,
 				A01D3D172B587E7000C1AC43 /* Assets.xcassets in Resources */,
+				A03B42812B61F580002E14CF /* CastInfoTableViewCell.xib in Resources */,
 				A01D3D152B587E6D00C1AC43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,12 +229,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01D3D122B587E6D00C1AC43 /* ViewController.swift in Sources */,
+				A03B42802B61F580002E14CF /* CastInfoTableViewCell.swift in Sources */,
 				A01D3D272B589E9F00C1AC43 /* TrendAPIManager.swift in Sources */,
 				A01D3D0E2B587E6D00C1AC43 /* AppDelegate.swift in Sources */,
 				A01D3D372B58A25700C1AC43 /* TrendTableViewCell.swift in Sources */,
 				A01D3D3B2B58A97E00C1AC43 /* Protocol.swift in Sources */,
 				A01D3D322B58A1EC00C1AC43 /* TrendViewController.swift in Sources */,
 				A01D3D102B587E6D00C1AC43 /* SceneDelegate.swift in Sources */,
+				A03B427C2B61F4EC002E14CF /* CreditViewController.swift in Sources */,
+				A03B42832B62151E002E14CF /* CreditAPIManager.swift in Sources */,
+				A03B42852B6218D6002E14CF /* Credit.swift in Sources */,
 				A01D3D3D2B58ACD600C1AC43 /* APIKey.swift in Sources */,
 				A01D3D2F2B58A17300C1AC43 /* TrendMoive.swift in Sources */,
 			);

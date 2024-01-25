@@ -28,6 +28,7 @@ class TrendViewController: UIViewController {
     func configureView() {
         TrendTableView.delegate = self
         TrendTableView.dataSource = self
+        TrendTableView.separatorStyle = .none
         TrendTableView.rowHeight = UITableView.automaticDimension
     }
     
@@ -35,7 +36,7 @@ class TrendViewController: UIViewController {
         let xib = UINib(nibName: TrendTableViewCell.identifier, bundle: nil)
         TrendTableView.register(xib, forCellReuseIdentifier: TrendTableViewCell.identifier)
     }
-
+    
 }
 
 extension TrendViewController: UITableViewDelegate, UITableViewDataSource {
@@ -51,4 +52,12 @@ extension TrendViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Trend", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: CreditViewController.identifier) as! CreditViewController
+        
+        vc.movieID = trendMovieList[indexPath.row].id
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
