@@ -29,6 +29,10 @@
 		A03B42812B61F580002E14CF /* CastInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */; };
 		A03B42832B62151E002E14CF /* CreditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B42822B62151E002E14CF /* CreditAPIManager.swift */; };
 		A03B42852B6218D6002E14CF /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B42842B6218D6002E14CF /* Credit.swift */; };
+		A03B428B2B62702C002E14CF /* OverViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B42892B62702C002E14CF /* OverViewTableViewCell.swift */; };
+		A03B428C2B62702C002E14CF /* OverViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03B428A2B62702C002E14CF /* OverViewTableViewCell.xib */; };
+		A03B428F2B627986002E14CF /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B428D2B627986002E14CF /* HeaderTableViewCell.swift */; };
+		A03B42902B627986002E14CF /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03B428E2B627986002E14CF /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastInfoTableViewCell.xib; sourceTree = "<group>"; };
 		A03B42822B62151E002E14CF /* CreditAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAPIManager.swift; sourceTree = "<group>"; };
 		A03B42842B6218D6002E14CF /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		A03B42892B62702C002E14CF /* OverViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewTableViewCell.swift; sourceTree = "<group>"; };
+		A03B428A2B62702C002E14CF /* OverViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverViewTableViewCell.xib; sourceTree = "<group>"; };
+		A03B428D2B627986002E14CF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		A03B428E2B627986002E14CF /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,10 @@
 				A01D3D362B58A25700C1AC43 /* TrendTableViewCell.xib */,
 				A03B427E2B61F580002E14CF /* CastInfoTableViewCell.swift */,
 				A03B427F2B61F580002E14CF /* CastInfoTableViewCell.xib */,
+				A03B42892B62702C002E14CF /* OverViewTableViewCell.swift */,
+				A03B428A2B62702C002E14CF /* OverViewTableViewCell.xib */,
+				A03B428D2B627986002E14CF /* HeaderTableViewCell.swift */,
+				A03B428E2B627986002E14CF /* HeaderTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -212,9 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01D3D342B58A20400C1AC43 /* Trend.storyboard in Resources */,
+				A03B42902B627986002E14CF /* HeaderTableViewCell.xib in Resources */,
 				A01D3D222B587EA100C1AC43 /* .gitignore in Resources */,
 				A01D3D1A2B587E7000C1AC43 /* LaunchScreen.storyboard in Resources */,
 				A01D3D382B58A25700C1AC43 /* TrendTableViewCell.xib in Resources */,
+				A03B428C2B62702C002E14CF /* OverViewTableViewCell.xib in Resources */,
 				A01D3D172B587E7000C1AC43 /* Assets.xcassets in Resources */,
 				A03B42812B61F580002E14CF /* CastInfoTableViewCell.xib in Resources */,
 				A01D3D152B587E6D00C1AC43 /* Main.storyboard in Resources */,
@@ -228,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03B428B2B62702C002E14CF /* OverViewTableViewCell.swift in Sources */,
+				A03B428F2B627986002E14CF /* HeaderTableViewCell.swift in Sources */,
 				A01D3D122B587E6D00C1AC43 /* ViewController.swift in Sources */,
 				A03B42802B61F580002E14CF /* CastInfoTableViewCell.swift in Sources */,
 				A01D3D272B589E9F00C1AC43 /* TrendAPIManager.swift in Sources */,

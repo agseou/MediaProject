@@ -57,6 +57,7 @@ extension TrendViewController: UITableViewDelegate, UITableViewDataSource {
         let vc = sb.instantiateViewController(withIdentifier: CreditViewController.identifier) as! CreditViewController
         
         vc.movieID = trendMovieList[indexPath.row].id
+        vc.movieInfo = trendMovieList[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)
     }
